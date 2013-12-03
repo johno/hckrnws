@@ -1,0 +1,9 @@
+body { margin: 0; }
+center > table { width: 100%; }
+
+#header { 
+  background-color: #fafafa;
+}
+#header > td { padding: 40px; }
+
+body, .pagetop { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
