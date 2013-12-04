@@ -9,6 +9,7 @@ $(document).ready(function() {
   $('#header > td > table > tbody > tr > td:nth-child(2)').removeAttr('style').attr('id', 'title');
 
   $('body > center > table > tbody > tr:nth-child(3)').attr('id', 'articles');
+  $('body > center > table > tbody > tr:nth-child(2)').remove();
 
   $('#articles > td > table tr:nth-child(3n-2)').addClass('article-title');
   $('#articles > td > table tr:nth-child(3n-1)').addClass('article-details');

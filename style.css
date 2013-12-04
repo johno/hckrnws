@@ -2,9 +2,19 @@ body { margin: 0; }
 center > table { width: 100%; }
 
 #header > td { padding: 40px; }
-#header { background-color: #fafafa; }
+#header { 
+  background-color: #fafafa;
+}
 
-body, .pagetop { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+body, .pagetop { 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
 
 .pagetop { margin-left: -20px; }
 .pagetop b { font-size: 20px; font-weight: 200; }
+
+#articles { background-color: #f5f5f5; }
+
+#articles > td > table { margin: 40px; }
+
+.article-details .subtext { padding-bottom: 40px; }
