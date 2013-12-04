@@ -29,7 +29,15 @@ $.fn.makeArticlesPretty = function() {
 }
 
 $.fn.makeCommentsPagePretty = function() {
-  // ...
+  $('body > center > table > tbody > tr:nth-child(2)').remove();
+
+  $('body > center > table > tbody > tr:nth-child(2)').attr('id', 'comment');
+  $('#comment > td > table:eq(0) > tbody > tr:eq(0)').addClass('article-title');
+  $('#comment > td > table:eq(0) > tbody > tr:nth-child(2)').addClass('article-details');
+  $('#comment > td > table:eq(0) > tbody > tr:nth-child(3)').remove();
+  $('#comment > td > table:eq(0) > tbody > tr:nth-child(3)').attr('id', 'add-comment-wrapper');
+  $('#comment > td > table:eq(1)').attr('id', 'comments-box-wrapper');
+  $('#comment > td > table:eq(1) > tbody > tr').addClass('comments-box');
 }
 
 $.fn.isCommentsPage = function() {

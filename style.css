@@ -13,9 +13,13 @@ body, .pagetop {
 .pagetop { margin-left: -20px; }
 .pagetop b { font-size: 20px; font-weight: 200; }
 
+#comment,
 #articles { background-color: #f5f5f5; }
 
 #articles > td > table { margin: 40px; }
+
+#comment > td > table { margin: 40px 40px 0 40px; }
+#comment > td > table:nth-child(2) { margin-top: 0; }
 
 .article-details .subtext { padding-bottom: 40px; }
 
