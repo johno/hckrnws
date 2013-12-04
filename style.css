@@ -18,3 +18,6 @@ body, .pagetop {
 #articles > td > table { margin: 40px; }
 
 .article-details .subtext { padding-bottom: 40px; }
+
+#header a:visited { color: #000; }
+#articles a:visited { color: #888; }
