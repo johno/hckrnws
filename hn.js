@@ -22,10 +22,31 @@ $.fn.makeHeaderPretty = function() {
 $.fn.makeArticlesPretty = function() {
   $('body > center > table > tbody > tr:nth-child(3)').attr('id', 'articles');
   $('body > center > table > tbody > tr:nth-child(2)').remove();
+  $().nukeArticlesBodyAndReplaceWithUl();
+}
 
-  $('#articles > td > table tr:nth-child(3n-2)').addClass('article-title');
-  $('#articles > td > table tr:nth-child(3n-1)').addClass('article-details');
-  $('#articles > td > table tr:nth-child(3n)').remove();
+$.fn.nukeArticlesBodyAndReplaceWithUl = function() {
+  var articleTrs = $('#articles > td > table tr').toArray();
+  $('#articles').html("<ol id='articles-list'></ol>");
+
+  for(var i = 0; i < articleTrs.length; i += 3) {    
+    $('#articles-list').append($().createLiFromTitleAndDetails(articleTrs[i], articleTrs[i+1]));
+  }
+}
+
+$.fn.createLiFromTitleAndDetails = function(currTitle, currDetails) {
+  if(!$(currTitle).find('.title').length) return;
+
+  console.log(currTitle);
+  console.log(currDetails);
+
+  return "<li>" + 
+            $().getLinkFromTitle(currTitle);
+         "</li>";
+}
+
+$.fn.getLinkFromTitle = function(currTitle) {
+  return "<a href='" + $(currTitle).find('.title a').attr('href') + "'>" + $(currTitle).find('.title a').text() + "</a>" +
 }
 
 $.fn.makeCommentsPagePretty = function() {

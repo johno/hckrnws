@@ -16,7 +16,7 @@ body, .pagetop {
 #comment,
 #articles { background-color: #f5f5f5; }
 
-#articles > td > table { margin: 40px; }
+#articles > td > table { margin: 40px 5%; width: 90%; }
 
 #comment > td > table { margin: 40px 40px 0 40px; }
 #comment > td > table:nth-child(2) { margin-top: 0; }
@@ -26,4 +26,12 @@ body, .pagetop {
 .article-details .subtext { padding-bottom: 40px; }
 
 #header a:visited { color: #000; }
-#articles a:visited { color: #888; }
+#articles a:visited { color: #666; }
+
+a:hover { color: #888; }
+
+.article-wrapper,
+.article-wrapper tr { display: table;  }
+.article-wrapper tr:hover { background-color: #fafafa; }
+
+.article-title { height: 20px; }
