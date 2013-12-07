@@ -31,7 +31,17 @@ body, .pagetop {
 a:hover { color: #888; }
 
 .article-wrapper,
-.article-wrapper tr { display: table;  }
+.article-wrapper tr { display: table; }
 .article-wrapper tr:hover { background-color: #fafafa; }
 
 .article-title { height: 20px; }
+
+ul { list-style-type: none; }
+
+#articles-list { margin: 0; padding: 0; border-top: thin solid #ddd; }
+#articles-list li { padding: 20px; border: thin solid transparent; }
+#articles-list li:hover {
+  background-color: #fafafa;
+  border-top: thin solid #f2f2f2;
+  border-bottom: thin solid #f2f2f2;
+}

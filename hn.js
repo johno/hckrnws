@@ -27,7 +27,7 @@ $.fn.makeArticlesPretty = function() {
 
 $.fn.nukeArticlesBodyAndReplaceWithUl = function() {
   var articleTrs = $('#articles > td > table tr').toArray();
-  $('#articles').html("<ol id='articles-list'></ol>");
+  $('#articles').html("<ul id='articles-list'></ul>");
 
   for(var i = 0; i < articleTrs.length; i += 3) {    
     $('#articles-list').append($().createLiFromTitleAndDetails(articleTrs[i], articleTrs[i+1]));
@@ -46,7 +46,7 @@ $.fn.createLiFromTitleAndDetails = function(currTitle, currDetails) {
 }
 
 $.fn.getLinkFromTitle = function(currTitle) {
-  return "<a href='" + $(currTitle).find('.title a').attr('href') + "'>" + $(currTitle).find('.title a').text() + "</a>" +
+  return "<a class='title-link' href='" + $(currTitle).find('.title a').attr('href') + "'>" + $(currTitle).find('.title a').text() + "</a>"
 }
 
 $.fn.makeCommentsPagePretty = function() {
