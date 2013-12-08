@@ -39,7 +39,7 @@ a:hover { color: #888; }
 ul { list-style-type: none; }
 
 #articles-list { margin: 0; padding: 0; border-top: thin solid #ddd; }
-#articles-list li { padding: 20px; border: thin solid transparent; border-left: 2px solid transparent; }
+#articles-list li { padding: 20px; padding-left: 40px; border: thin solid transparent; border-left: 2px solid transparent; }
 #articles-list li:hover {
   background-color: #fafafa;
   border-top: thin solid #f2f2f2;
