@@ -1,6 +1,8 @@
 body { margin: 0; }
 center > table { width: 100%; }
 
+#img-wrapper img { margin-left: -30px; }
+
 #header > td { padding: 40px; }
 #header { 
   background-color: #fafafa;
@@ -10,7 +12,7 @@ body, .pagetop {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
-.pagetop { margin-left: -20px; }
+.pagetop { margin-left: 0px; }
 .pagetop b { font-size: 20px; font-weight: 200; }
 
 #comment,
