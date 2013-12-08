@@ -41,12 +41,19 @@ $.fn.createLiFromTitleAndDetails = function(currTitle, currDetails) {
   console.log(currDetails);
 
   return "<li>" + 
-            $().getLinkFromTitle(currTitle);
+            $().getLinkFromTitle(currTitle) + '<br>' +
+            $().getPostDetails(currDetails)
          "</li>";
 }
 
 $.fn.getLinkFromTitle = function(currTitle) {
-  return "<a class='title-link' href='" + $(currTitle).find('.title a').attr('href') + "'>" + $(currTitle).find('.title a').text() + "</a>"
+  return "<a class='title-link' href='" + 
+         $(currTitle).find('.title a').attr('href') + "'>" + 
+         $(currTitle).find('.title a').text() + "</a>"
+}
+
+$.fn.getPostDetails = function(currDetails) {
+  return "<span class='small'>" + $(currDetails).find('.subtext').html() + "</span>";
 }
 
 $.fn.makeCommentsPagePretty = function() {
