@@ -4,8 +4,11 @@ $(document).ready(function() {
   
   $().makeHeaderPretty();
 
+  // Use url instead of this junk.
   if($().isCommentsPage()) {
     $().makeCommentsPagePretty();
+  } else if($().isAskPage()) {
+    // ...
   } else {
     $().makeArticlesPretty();
   }
@@ -71,3 +74,8 @@ $.fn.makeCommentsPagePretty = function() {
 $.fn.isCommentsPage = function() {
   return $('body > center > table > tbody > tr:nth-child(3) > td > table tr:nth-child(4) td form').length > 0;
 }
+
+$.fn.isAskPage = function() {
+  return $('body > center > table > tbody > tr:nth-child(3) > td > table tr:nth-child(6) td form').length > 0;
+}
+
