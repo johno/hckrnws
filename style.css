@@ -4,13 +4,20 @@ center > table { width: 100%; }
 #img-wrapper img { margin-left: -30px; }
 
 #header > td { padding: 40px; }
-#header { 
+#header {
   background-color: #fafafa;
 }
 
-body, .pagetop { 
+body, .pagetop {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
+
+td .comment {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+td .comhead { font-size: 12px; }
 
 .pagetop { margin-left: 0px; }
 .pagetop b { font-size: 20px; font-weight: 200; }
@@ -18,7 +25,7 @@ body, .pagetop {
 #comment,
 #articles { background-color: #f5f5f5; }
 
-#articles > td > table { margin: 40px 5%; width: 90%; }
+#articles > td > table { margin: 40px 10%; width: 80%; }
 
 #comment > td > table { margin: 40px 40px 0 40px; }
 #comment > td > table:nth-child(2) { margin-top: 0; }
