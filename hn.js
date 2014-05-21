@@ -1,7 +1,7 @@
 // Adapted from https://github.com/etcet/HNES/blob/master/js/hn.js
 
 $(document).ready(function() {
-  
+
   $().makeHeaderPretty();
 
   // Use url instead of this junk.
@@ -32,7 +32,7 @@ $.fn.nukeArticlesBodyAndReplaceWithUl = function() {
   var articleTrs = $('#articles > td > table tr').toArray();
   $('#articles').html("<ul id='articles-list'></ul>");
 
-  for(var i = 0; i < articleTrs.length; i += 3) {    
+  for(var i = 0; i < articleTrs.length; i += 3) {
     $('#articles-list').append($().createLiFromTitleAndDetails(articleTrs[i], articleTrs[i+1]));
   }
 }
@@ -43,15 +43,15 @@ $.fn.createLiFromTitleAndDetails = function(currTitle, currDetails) {
   console.log(currTitle);
   console.log(currDetails);
 
-  return "<li>" + 
+  return "<li>" +
             $().getLinkFromTitle(currTitle) + '<br>' +
             $().getPostDetails(currDetails)
          "</li>";
 }
 
 $.fn.getLinkFromTitle = function(currTitle) {
-  return "<a class='title-link' href='" + 
-         $(currTitle).find('.title a').attr('href') + "'>" + 
+  return "<a class='title-link' href='" +
+         $(currTitle).find('.title a').attr('href') + "'>" +
          $(currTitle).find('.title a').text() + "</a>"
 }
 
