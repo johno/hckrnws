@@ -83,4 +83,3 @@ $.fn.isCommentsPage = function() {
 $.fn.isAskPage = function() {
   return $('body > center > table > tbody > tr:nth-child(3) > td > table tr:nth-child(6) td form').length > 0;
 }
-
