@@ -78,6 +78,7 @@ ul { list-style-type: none; }
 
 .small { font-size: 12px; }
 
+/* http://www.basscss.com/ */
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
           font-smoothing: antialiased;
@@ -119,3 +120,8 @@ border-radius: .25rem;
 }
 
 textarea { height: 6rem; }
+
+input[name="q"] {
+  width: 20%;
+  display: inline;
+}
