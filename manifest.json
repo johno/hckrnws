@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Hacker News with some flair.",
   "manifest_version": 2,
+  "author": "John Otander (@4lpine)",
   "permissions": ["tabs"],
   "content_scripts": [
     {
@@ -21,5 +22,6 @@
         "https://news.ycombinator.org/*"
       ]
     }
-  ]
+  ],
+  "web_accessible_resources": ["js/jquery-1.10.1.min.js"]
 }

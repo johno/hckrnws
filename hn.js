@@ -12,6 +12,8 @@ $(document).ready(function() {
   } else {
     $().makeArticlesPretty();
   }
+
+  $().makeFooterPretty();
 });
 
 $.fn.makeHeaderPretty = function() {
@@ -20,6 +22,10 @@ $.fn.makeHeaderPretty = function() {
   $('#header td').removeAttr('bgcolor');
   $('#header > td > table > tbody > tr > td:first-child').removeAttr('style').attr('id', 'img-wrapper');
   $('#header > td > table > tbody > tr > td:nth-child(2)').removeAttr('style').attr('id', 'title');
+}
+
+$.fn.makeFooterPretty = function() {
+  $('body > center > table > tbody > tr:last-child').attr('id', 'footer');
 }
 
 $.fn.makeArticlesPretty = function() {
@@ -35,13 +41,12 @@ $.fn.nukeArticlesBodyAndReplaceWithUl = function() {
   for(var i = 0; i < articleTrs.length; i += 3) {
     $('#articles-list').append($().createLiFromTitleAndDetails(articleTrs[i], articleTrs[i+1]));
   }
+  $('#articles-list').append(articleTrs[articleTrs.length-1]);
+  $('#articles-list > tr').attr('id', 'more').wrap('<li class="more-wrapper"></li>');
 }
 
 $.fn.createLiFromTitleAndDetails = function(currTitle, currDetails) {
   if(!$(currTitle).find('.title').length) return;
-
-  console.log(currTitle);
-  console.log(currDetails);
 
   return "<li>" +
             $().getLinkFromTitle(currTitle) + '<br>' +

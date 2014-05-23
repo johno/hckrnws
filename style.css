@@ -3,11 +3,17 @@ center > table { width: 100%; }
 
 #img-wrapper img { margin-left: -30px; }
 
-#header > td { padding: 40px; }
-#header {
+#header > td,
+#footer > td {
+  padding: 40px;
+}
+#header,
+#footer {
   background-color: #fafafa;
 }
-
+#footer {
+  border-top: thin solid #ddd;
+}
 body, .pagetop {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
@@ -37,6 +43,20 @@ td .comhead { font-size: 12px; }
 #header a:visited { color: #000; }
 #articles a:visited { color: #666; }
 
+.more-wrapper > tr,
+.more-wrapper .title {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#articles-list li.more-wrapper:hover {
+  background-color: #ddd;
+  border-left: none;
+  text-align: center;
+}
+
+
 a:hover { color: #888; }
 
 .article-wrapper,
@@ -47,7 +67,7 @@ a:hover { color: #888; }
 
 ul { list-style-type: none; }
 
-#articles-list { margin: 0; padding: 0; border-top: thin solid #ddd; }
+#articles-list { margin: 0; padding: 0; border-top: thin solid #ddd; width: 100%; }
 #articles-list li { padding: 20px; padding-left: 40px; border: thin solid transparent; border-left: 2px solid transparent; }
 #articles-list li:hover {
   background-color: #fafafa;
