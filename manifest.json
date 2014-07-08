@@ -5,6 +5,11 @@
   "manifest_version": 2,
   "author": "John Otander (@4lpine)",
   "permissions": ["tabs"],
+  "icons": {
+    "16": "ycombinator-logo.png",
+    "48": "ycombinator-logo.png",
+    "128": "ycombinator-logo.png"
+  },
   "content_scripts": [
     {
       "run_at": "document_end",
