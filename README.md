@@ -1,5 +1,7 @@
 # hckrnws
 
+_This is currently under development._
+
 A chrome extension to give Hacker News a little bit of flair.
 
 Inspired by [HNES](https://github.com/etcet/HNES).
