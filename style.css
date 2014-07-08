@@ -1,7 +1,11 @@
-body { margin: 0; }
-center > table { width: 100%; }
-
-#img-wrapper img { margin-left: -30px; }
+body {
+  margin: 0;
+  font-size: 20px;
+}
+center > table { width: 90%; }
+center > table > tbody > tr:nth-child(3) {
+  padding: 4rem;
+}
 
 #header > td,
 #footer > td {
@@ -18,7 +22,8 @@ body, .pagetop {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
-td .comment {
+td .comment,
+td.title {
   font-size: 16px;
   line-height: 20px;
 }
@@ -28,53 +33,7 @@ td .comhead { font-size: 12px; }
 .pagetop { margin-left: 0px; }
 .pagetop b { font-size: 20px; font-weight: 200; }
 
-#comment,
-#articles { background-color: #f5f5f5; }
-
-#articles > td > table { margin: 40px 10%; width: 80%; }
-
-#comment > td > table { margin: 40px 40px 0 40px; }
-#comment > td > table:nth-child(2) { margin-top: 0; }
-
-#comment #comments-box-wrapper { margin-top: 0; }
-
-.article-details .subtext { padding-bottom: 40px; }
-
-#header a:visited { color: #000; }
-#articles a:visited { color: #666; }
-
-.more-wrapper > tr,
-.more-wrapper .title {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-#articles-list li.more-wrapper:hover {
-  background-color: #ddd;
-  border-left: none;
-  text-align: center;
-}
-
-
 a:hover { color: #888; }
-
-.article-wrapper,
-.article-wrapper tr { display: table; }
-.article-wrapper tr:hover { background-color: #fafafa; }
-
-.article-title { height: 20px; }
-
-ul { list-style-type: none; }
-
-#articles-list { margin: 0; padding: 0; border-top: thin solid #ddd; width: 100%; }
-#articles-list li { padding: 20px; padding-left: 40px; border: thin solid transparent; border-left: 2px solid transparent; }
-#articles-list li:hover {
-  background-color: #fafafa;
-  border-top: thin solid #f2f2f2;
-  border-bottom: thin solid #f2f2f2;
-  border-left: 2px solid #333;
-}
 
 .small { font-size: 12px; }
 
